@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+           Modal 
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- modal start here -->
+        <div class="uw-modal">
+            <div class='uw-modal-box'>
+                <div class="content">
+                    <span class="logo"><img src="./logo-modal.png" alt=""></span>
+                    <span class="modal-title">Selecciona tu Ciudad</span>
+                    <form action="" name="modalCity"  onsubmit="return validateForm()">
+                        <p class="errorMessage" id="errorCity"> </p>
+                        <select  id="myCity"  name="myCity" title="MyCity"> 
+                            <option value="" selected="true" disabled="disabled" hidden>Seleccione su Ciudad</option>
+                            <option value="santamarta">Santa Marta</option>
+                            <option value="rioacha">Riohacha</option>  
+                            <option value="cartagena">Cartagena</option>
+                        </select>
+                        <br />
+                         <span class="edad">
+                            <p class="errorMessage" id="errorAge"> </p>
+                            <input type="checkbox" name="mayordeEdad" id="mayordeEdad" />
+                            <label for="mayordeEdad">Soy mayor de 18 años</label>
+                         </span>
+                         <br />
+                        <button value="Submit">Entrar</button>
+                    </form>
+                </div>
+                <p class="modal-text">El exceso de alcohol es perjudicial para la salud. Ley 30 de 1986. <br />Prohíbase el expendio de bebidas embriagantes a menores de edad y mujeres embarazadas. Ley 124 de 1994.</p>
+            </div>
+        </div>
+        <script src="./validateForm.js"></script>
+        <!-- modal end here -->
+    </body>
+</html>
